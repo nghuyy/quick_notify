@@ -40,6 +40,7 @@ class QuickNotifyPlugin : public flutter::Plugin {
   ToastNotifier toastNotifier_{ ToastNotificationManager::CreateToastNotifier(L"quick_notify") };
 };
 
+
 // static
 void QuickNotifyPlugin::RegisterWithRegistrar(
     flutter::PluginRegistrarWindows *registrar) {
