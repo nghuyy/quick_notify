@@ -16,7 +16,7 @@ endif()
 exec_program(${NUGET_EXE}
     ARGS install "Microsoft.Windows.CppWinRT" -Version 2.0.210505.3 -ExcludeVersion -OutputDirectory ${CMAKE_BINARY_DIR}/packages)
 exec_program(${NUGET_EXE}
-    ARGS install "Microsoft.Toolkit.Uwp.Notifications" -Version 7.0.2 -ExcludeVersion -OutputDirectory ${CMAKE_BINARY_DIR}/packages)
+    ARGS install "Microsoft.Toolkit.Uwp.Notifications" -Version 7.1.2 -ExcludeVersion -OutputDirectory ${CMAKE_BINARY_DIR}/packages)
 ################ NuGet install end ################
 
 add_library(${PLUGIN_NAME} SHARED
