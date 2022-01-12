@@ -80,8 +80,8 @@ namespace {
                 version_stream << "7";
             }
             result->Success(flutter::EncodableValue(version_stream.str()));
-        }else if(){
-
+        }else if(method_call.method_name().compare("winRegCallback")){//todo: continue dev
+            result->Success(nullptr);
         } else if (method_call.method_name().compare("notify") == 0) {  
         auto args = std::get<flutter::EncodableMap>(*method_call.arguments());
         auto content = std::get<std::string>(args[flutter::EncodableValue("content")]);
